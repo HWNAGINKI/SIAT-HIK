@@ -1,0 +1,108 @@
+/* apple는 폰트, 제목크기와 테두리 및 이미지 정렬 */
+
+
+/* 폰트지정 */
+.korna {
+    font-family: 'Krona One', sans-serif
+}
+.nanumpen {
+    font-family: 'Nanum Pen Script', cursive;
+}
+.jua {
+    font-family: 'Jua', sans-serif;
+}
+
+.fs { /* 제목크기 */
+    font-size: 50px;
+}
+
+.bgimg {
+    background: url(https://images.unsplash.com/photo-1503852460961-aa7ffdd3d64d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80) center/cover;
+    background-position: 100 -140px;
+    background-blend-mode: darken;
+    background-size: cover;
+}
+
+/* iPhone11 이미지 */
+#img1 {
+    background: url(https://i.pinimg.com/236x/56/0e/7b/560e7b9eef4de0708f8535225d6e5ec5.jpg) center/cover;
+    background-size: cover;
+    height: 200px;
+}
+
+/* MAC 이미지 */
+#img2 {
+    background: url(https://www.apple.com/newsroom/images/product/mac/standard/Apple_16-inch-MacBook-Pro_111319_big.jpg.large.jpg) center/cover;
+    background-size: cover;
+    height: 200px;
+}
+
+/* iPad 이미지 */
+#img3 {
+    background: url(https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/ipad-pro-12-select-cell-spacegray-201810_FMT_WHH?wid=940&hei=1112&fmt=png-alpha&qlt=80&.v=1576264056744) center/cover;
+    background-size: cover;
+    height: 200px;
+}
+
+/* Watch 이미지 */
+#img4 {
+    background: url(https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/MTPM2_VW_PF+watch-44-alum-gold-nc-5s_VW_PF_WF_CO_GEO_KR?wid=375&hei=356&fmt=p-jpg&qlt=95&op_usm=0.5,0.5&.v=1566419585195,1567124922018) center/cover;
+    background-size: cover; /* 꽉찬 비율로 */
+    height: 200px; /* 높이 200픽셀 지정 */
+}
+
+.card {
+    /* position: relative; */
+    display: -ms-flexbox;
+    display: flex; /* 고정 */
+    -ms-flex-direction: column;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    background-color: rgba(222, 200, 223, 0.281);
+    background-clip: border-box;
+    border: 3px solid rgba(240, 160, 226, 0.774);
+    border-style: dashed; /* 대시 테두리 설정 */
+    border-radius: 1.2rem; /* 곡률 설정 */
+}
+
+#fc { /* 글자 정렬 */
+    text-align: center;
+}
+article { /* 테이블 설정! */
+    overflow: auto;
+    margin: 20px 0 0;
+    border: 1px solid   grey;
+    padding: 30px;
+    line-height: 1.6;
+    border-radius: 80px; /* 선이 부드럽기 위해서 곡률 설정함 */
+    border-style: dashed; /* 대시 테두리 설정! */
+}
+
+/* 게시판(테이블) CSS */
+.tbl-ex{ /* 마진이라는 테이블 범위가 좀 더 넓게 해줌*/
+         margin:10px auto 0px auto;
+}
+.tbl-ex, .tbl-ex th , .tbl-ex td{ /* 그룹 지정자, 테이블 테두리 지정 */
+         border:1px solid orangered;
+         border-width: 3px 0;
+         border-collapse: collapse; /* 테이블의 사이에 있는 공간을 없앤 것 */
+         text-align: center; /* 가운데로 정렬 */
+         padding:10px;
+}
+.tbl-ex th{ /* 테이블에 있는 제목 배경색 지정 */
+         background-color: rgb(0, 0, 0);
+         font-size: 1.1em;
+         color: rgb(255, 255, 255); /* 글자색 */
+         border-width:2px 0;
+}
+.tbl-ex td{
+         border-style: dashed; /* border 스타일 : 대시 테두리 변경*/
+}
+.tbl-ex tr:hover td{ /* 커서가 옮길 땐 배경색이 바뀐다 */
+         background-color: rgba(126, 251, 95, 0.424);
+         cursor : pointer;
+}
+.even{ /* 배경색 */
+         background-color: orange;
+}
