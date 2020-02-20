@@ -7,7 +7,6 @@
   <!-- https://www.w3schools.com/bootstrap4/tryit.asp?filename=trybs_default&stacked=h -->
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
-  <!-- <i>에 아이콘 넣기 -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <!-- 폰트(krona,nanum)추가 / fonts.google.com에서 등록함 -->
   <link href="https://fonts.googleapis.com/css?family=Jua|Krona+One|Nanum+Pen+Script&display=swap" rel="stylesheet">
@@ -21,7 +20,7 @@
 </head>
 <body>
 <nav>
-    <nav class="navbar navbar-expand-md navbar-dark bg-dark mb-4">
+    <nav class="navbar navbar-expand-sm navbar-dark bg-dark justify-content-center fixed-top">
         <!-- navbar / 애플로고(w3schools.com에서 "fa fa-apple	&#xf179";) -->
         <a class="fa fa-apple" style="font-size:36px" href="#"> </a>
 
@@ -31,7 +30,7 @@
             aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse" id="navbarCollapse">
+        <div class=" collapse navbar-collapse " id="navbarCollapse">
             <ul class="navbar-nav mr-auto"> 
                 <li class="nav-item active">
                     <a class="nav-link" href="#logo">로고</a>
@@ -46,17 +45,20 @@
                     <a class="nav-link" href="#board">게시판</a>
                 </li>
             </ul>
-            <!-- 검색 버튼 / 애플 사이트 검색용 서버 등록함 -->
-            <form class="form-inline mt-2 mt-md-0" action="https://www.apple.com/kr/search">
+            <!-- 검색 버튼 / 애플 사이트 검색용 서버 등록하고 w3schools.com에서 아이콘 -->
+            <form class="form-inline mt-2 mt-md-0" action="https://www.apple.com/kr/search? ">
                 <input class="form-control mr-sm-2" type="text" aria-label="Search">
-                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">검색</button>
+                <button type="submit">
+                    <i class="fa fa-search" style="font-size:24px;color:black" type="submit">
+                    </i>
+                </button>
             </form>
         </div>
         </nav>
 </nav>
 <header>
     <!-- s3schools에서 jumbotron이라는 소스를 가져와서 사용함 -->
-<div class="jumbotron bg-secondary text-white bgimg">
+<div class="jumbotron text-center bg-secondary text-white bgimg">
   <h1 class="nanumpen">애플에 오신걸 환영합니다</h1>
   <p>SIAT-황인기</p> 
 </div>
